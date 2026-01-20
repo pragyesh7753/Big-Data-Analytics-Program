@@ -36,3 +36,40 @@ colors <- c("blue", "orange", "red", "green")
 pie(x, labels = mylabel, main = "Diet", col = colors)
 
 legend("bottomright", colors, fill = colors)
+
+
+# -------------------Bar Chart----------------------------
+
+x <- c("Delhi", "Haryana", "Punjab", "Kolkata")
+y <- c(10, 20, 30, 40)
+
+barplot(y, names.arg = x, col = "green", density = 20, width = c(1,2,3,4))
+
+barplot(y, names.arg = x, col = "green", horiz = TRUE)
+
+# --------------------------------------------------------------------
+library(datasets)
+data(mtcars)
+
+head(mtcars)
+
+summary(mtcars)
+
+boxplot(mtcars$mpg, col = "orange")
+
+hist(mtcars$mpg, col = "orange")
+
+hist(mtcars$mpg, col = "green", breaks = 45)
+
+# ------------------------Bar Plotting----------------------------
+barplot(table(mtcars$carb), col = "red")
+
+# --------------------------Box plot------------------------------
+boxplot(mpg~gear, data = mtcars, col = "blue")
+
+# ---------------------------Histogram------------------------------
+hist(subset(mtcars, cyl==4) $mpg, col = "green")
+hist(subset(mtcars, cyl==8) $mpg, col = "green")
+
+# ----------------------------Scatter plot----------------------------------
+with(mtcars, plot(mpg, qsec))
