@@ -48,7 +48,7 @@ Data_Frame3 <- data.frame(
 
 newDF <- rbind(Data_Frame2, Data_Frame3)
 
-plot(1,10)
-plot(c(1,5), c(2,6))
-plot(c(1,2,3,4,5,6), c(2,3,6,9,12,14))
-x <- c(1,2,3,4,5)
+plot(1, 10)
+plot(c(1, 5), c(2, 6))
+plot(c(1, 2, 3, 4, 5, 6), c(2, 3, 6, 9, 12, 14))
+x <- c(1, 2, 3, 4, 5)
